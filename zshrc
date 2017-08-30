@@ -5,6 +5,11 @@ stty -ixon
 plugins=(git)
 source $ZSH/oh-my-zsh.sh 
 
+PATH="~/.brew/bin:$PATH"
+
+# Load Homebrew config script
+source $HOME/.brewconfig.zsh
+
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:~/.brew/bin"
 USER=jguyet
 export USER
